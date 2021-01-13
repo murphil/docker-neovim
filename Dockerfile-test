@@ -1,0 +1,5 @@
+FROM nnurphy/neovim as neovim 
+
+FROM ub 
+
+COPY --from=neovim /root/local/nvim /usr
